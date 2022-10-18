@@ -9,3 +9,5 @@
 ## Installation Tutorial
 
 [Installation Video](https://www.youtube.com/watch?v=wIRt-6uaLyM)
+
+Thank you [@4rrkus](https://github.com/4rrkus) for helping me test Linux support
