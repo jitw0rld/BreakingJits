@@ -6,6 +6,7 @@
 const wallpaper = import('wallpaper');
 const axios = require('axios');
 const fs = require('fs');
+const path = require('path');
 const url = 'http://71.72.237.156/breakingbad';
 
 async function set() {
