@@ -5,3 +5,7 @@
 3. Free breaking bad wallpaper slideshow
 4. ...
 5. Profit
+
+## Installation Tutorial
+
+[Installation Video](https://www.youtube.com/watch?v=wIRt-6uaLyM)
