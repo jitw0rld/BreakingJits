@@ -13,8 +13,10 @@ async function set() {
     // set the wallpaper
     // delete the wallpaper.png
     const response = await axios.get(url, { responseType: 'stream' });
-    response.data.pipe(fs.createWriteStream('wallpaper.png'));
-    await (await wallpaper).setWallpaper('wallpaper.png');
-    fs.unlinkSync('wallpaper.png');
+    response.data.pipe(
+        fs.createWriteStream(path.join(__dirname, 'wallpaper.png'))
+    );
+    await (await wallpaper).setWallpaper(path.join(__dirname, 'wallpaper.png'));
+    fs.unlinkSync(path.join(__dirname, 'wallpaper.png'));
 }
 setInterval(set, 5000);
