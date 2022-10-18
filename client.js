@@ -52,11 +52,7 @@ async function set() {
     if (args.debug) console.log(debug(`Setting wallpaper...`));
     await (await wallpaper).setWallpaper(path.join(__dirname, 'wallpaper.png'));
     if (args.debug)
-        console.log(debug(`Wallpaper set. ${chalk.green.bold('✓')}`));
-    if (args.debug) console.log(debug(`Deleting wallpaper...`));
-    fs.unlinkSync(path.join(__dirname, 'wallpaper.png'));
-    if (args.debug)
-        console.log(debug(`Wallpaper deleted. ${chalk.green.bold('✓')}`));
+        console.log(debug(`Wallpaper set. ${chalk.green.bold('✓')}\n\n`));
 }
 setInterval(set, 5000);
 
